@@ -57,7 +57,7 @@ export default class Userdata extends Component {
     if (!this.state.loading) {
       // return 'Loading....'
       console.log(this.state.user)
-      return <LinearProgress style={{marginTop: '5px'}} />
+      return <LinearProgress valueBuffer={100} />
     }
     const {user} = this.state
     const makeStyle = {
@@ -91,22 +91,13 @@ export default class Userdata extends Component {
             Go Back
           </Link>
         </Button>
-        <div>
-          {/* <p>Name:{user.name}</p>
-          <p>Id:{user.id}</p>
-          <p>Username:{user.username}</p>
-          <p>Email:{user.email}</p> */}
-          {/* <p>Username:{}</p>
-          <p></p> */}
-        </div>
         <center>
-          <Card style={{maxWidth: 600}}>
+          <Card style={{maxWidth: 600, boxShadow: '4px 4px 6px 4px'}}>
             <CardActionArea>
               <CardContent style={styleFont}>
-                <div style={{backgroundColor: 'pink', borderRadius: '5%'}}>
+                <div style={{borderRadius: '5%'}}>
                   <img src={`https://source.unsplash.com/1600x900/?people,${Math.random()}`} style={makeStyle}></img>
                 </div>
-                <Divider />
                 Id:{user.id}
                 <br />
                 <Divider />
