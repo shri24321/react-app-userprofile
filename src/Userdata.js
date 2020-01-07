@@ -56,7 +56,7 @@ export default class Userdata extends Component {
   render() {
     if (!this.state.loading) {
       // return 'Loading....'
-      console.log(this.state.user)
+      // console.log(this.state.user)
       return <LinearProgress valueBuffer={100} />
     }
     const {user} = this.state
