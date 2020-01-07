@@ -41,7 +41,7 @@ export default class User extends Component {
                     <ListItemText
                       disableTypography
                       primary={
-                        <Typography type="body2" style={{fontFamily: 'caveat', fontSize: '25px', color: 'red'}}>
+                        <Typography type="body2" style={{fontSize: '20px', color: 'red'}}>
                           {user.name}
                         </Typography>
                       }

@@ -70,14 +70,14 @@ export default class Userdata extends Component {
       borderRadius: '10%',
     }
     const styleFont = {
-      fontFamily: 'Caveat',
+      // fontFamily: 'Caveat',
       fontSize: '30px',
       overflowWrap: 'break-word',
     }
     const classes = this.useStyles
     return (
       <Fragment>
-        <Button style={{color: 'red', fontFamily: 'Caveat'}}>
+        <Button style={{color: 'red'}}>
           <Link
             to="/react-app-userprofile"
             style={{
